@@ -7,6 +7,7 @@ authors = ["shunki <bono0504@icloud.com>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 numpy = "^1.22.3"
+pre-commit = "^2.18.1"
 
 [tool.poetry.dev-dependencies]
 
