@@ -16,3 +16,12 @@ $ git push -u origin main
 ```
 $ git remote -v
 ```
+
+## add関係
+
+- add
+```
+$ git add ${FILE_NAME}
+$ git add .
+```
+でgitに追加できる。
