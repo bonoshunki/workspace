@@ -22,6 +22,7 @@ mac 以外は[ここ](https://python-poetry.org/docs/master/#installing-with-the
 ## 初期設定
 
 - 新しくプロジェクトを作成する
+
   以下コマンドでプロジェクトを作成できる。
 
 ```
@@ -29,6 +30,7 @@ $ poetry new ${PROJECT_NAME}
 ```
 
 - 既存のプロジェクトに導入する
+
   既存プロジェクトのディレクトリに移動し、以下コマンド実行
 
 ```
