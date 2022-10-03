@@ -1,9 +1,10 @@
-# Git基本コマンド
+# Git 基本コマンド
 
 ## 初期設定をする
 
-- 既存リポジトリをgitにあげる場合
-```
+- 既存リポジトリを git にあげる場合
+
+```sh
 $ git init
 $ echo '# ${PROJECT_NAME}' >> README.md
 $ git add README.md
@@ -12,16 +13,27 @@ $ git remote add origin ${URL}
 $ git push -u origin main
 ```
 
-以下コマンドで、originの設定を確認できる
-```
+以下コマンドで、origin の設定を確認できる
+
+```sh
 $ git remote -v
 ```
 
-## add関係
+## add 関係
 
 - add
-```
+
+```sh
 $ git add ${FILE_NAME}
 $ git add .
 ```
-でgitに追加できる。
+
+で git に追加できる。
+
+## コミットの取り消し
+
+直前のコミットのみ取り消したい場合
+
+```sh
+$ git reset --soft HEAD^
+```
