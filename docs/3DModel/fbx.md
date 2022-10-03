@@ -25,7 +25,7 @@ Python は M1 非対応。C++は少し大変
 
 動的利用は以下のコード
 
-```zsh
+```sh
 $ sudo install_name_tool -id "/Applications/Autodesk/FBX SDK/2020.3.2/lib/clang/debug/libfbxsdk.dylib" "/Applications/Autodesk/FBX SDK/2020.3.2/lib/clang/debug/libfbxsdk.dylib"
 $ g++ -L"/Applications/Autodesk/FBX SDK/2020.3.2/lib/clang/debug" -I"/Applications/Autodesk/FBX SDK/2020.3.2/include" -lfbxsdk -std=c++11 test.cpp
 ```
