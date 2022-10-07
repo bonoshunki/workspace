@@ -32,8 +32,15 @@ $ g++ -L"/Applications/Autodesk/FBX SDK/2020.3.2/lib/clang/debug" -I"/Applicatio
 
 静的利用はさらに追加で処理必須。https://qiita.com/1024chon/items/a1b1eedba7781a61cf5e 参照。
 
+## Fbx SDK を利用する際
+
+[このフォーラム](https://forums.autodesk.com/t5/fbx-forum/bd-p/area-b64)にかなり有益情報が含まれているので、参考にすると良い。
+
 # 出典
 
 - https://qiita.com/binzume/items/678baf9a20c6a96a1d81
 - https://ja.wikipedia.org/wiki/FBX
 - https://yttm-work.jp/model_render/model_render_0008.html
+- https://hobbyistbox.hatenablog.com/entry/2016/02/19/002609
+- https://splunktool.com/convert-obj-to-fbx-with-python-fbx-sdk
+- http://marupeke296.com/FBX_No7_TextureMaterial.html
