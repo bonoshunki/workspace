@@ -4,7 +4,7 @@
 
 pip で導入したものなどが入る場所。例えば外部パッケージを追加したい場合等に、site-packages に入れることで import できるようになるが、案外場所がわからない。例えば pyenv を使っていたりするとなおさら。その際は、以下のコードで場所を確認できる。
 
-```bash
+```sh
 python -c "import site; print (site.getsitepackages())"
 ```
 
