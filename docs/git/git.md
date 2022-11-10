@@ -37,3 +37,32 @@ $ git add .
 ```sh
 $ git reset --soft HEAD^
 ```
+
+リソースの変更から取り消したい場合
+
+```sh
+$ git reset --hard HEAD^
+```
+
+## add の取り消し
+
+add を取り消したい場合
+
+```sh
+$ git reset HEAD
+```
+
+## push の取り消し
+
+- 履歴を残したくない場合
+  - コミットの取り消しをおこなった後に、push する。ただし、そのままだと git に以前のコミットと conflict すると怒られるので、`-f`で上書きする。
+    ```sh
+    $ git reset --soft HEAD^
+    $ git push -f
+    ```
+- 履歴を残したい場合
+  - revert というコマンドで変更を打ち消して、コミットし直す。
+    ```sh
+    $ git revert HEAD
+    $ git push origin HEAD
+    ```
