@@ -37,3 +37,7 @@ $ pyenv local ${VERSION}
 ```
 
 でバージョンを切り替える。global の方は全体に適用、local の方は現在いるディレクトリのみ適用。
+
+## Timezone について
+
+pytz よりも Zoneinfo もしくは dateutils を用いるべき（[出典](https://zenn.dev/atsuoishimoto/articles/505b3f4831443a1b63ad)）。
