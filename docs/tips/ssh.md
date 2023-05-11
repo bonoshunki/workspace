@@ -72,3 +72,22 @@ fi
 ```bash
 $ ssh yourhost /usr/bin/true
 ```
+
+## 踏み台を経由する
+
+踏み台サーバーを経由する場合は、以下のように記述する。
+
+```
+HOST $踏み台の識別子（踏み台用なので、適当なな名前が良い）
+        Hostname $IP
+        User $USERNAME
+        Port $PORT
+        IdentityFile $PATH
+        ForwardAgent yes
+
+HOST $目的の識別子
+        Hostname $IP
+        User $USERNAME
+        IdentityFile $PATH
+        ProxyCommand ssh -W %h:%p $踏み台の識別子
+```
