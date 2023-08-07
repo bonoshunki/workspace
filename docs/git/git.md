@@ -66,3 +66,7 @@ $ git reset HEAD
     $ git revert HEAD
     $ git push origin HEAD
     ```
+
+## 複数アカウントの使い分け
+
+[こちら](https://zenn.dev/taichifukumoto/articles/how-to-use-multiple-github-accounts)の記事が最強.

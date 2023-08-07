@@ -14,3 +14,22 @@ CrossEntropyLoss は、各入力に対する損失を計算するために使用
 input = (batch size, input ids size, vocaburary size)
 label = (input ids size)
 ```
+
+## logits について
+
+Softmax に入れる前のやつ
+
+## MacOS13.3 のバグ
+
+MacOS を 13.3 にあげたところ、pytorch で以下のエラーが出るようになった。
+
+```
+MPS does not support cumsum op with int64
+```
+
+これは[こちら](https://github.com/pytorch/pytorch/issues/96610)で述べられているように、2023 年 4 月 26 日現在、pytorch の nightly 版（preview 版）をダウンロードすることで解決できる。以下コマンド。
+
+```bash
+# MPS acceleration is available on MacOS 12.3+
+$ pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu
+```
