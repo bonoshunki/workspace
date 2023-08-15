@@ -20,6 +20,8 @@ pip install ctranslate2
 ct2-transformers-converter --model mosaicml/mpt-7b --output_dir mpt-7b --quantization int8_float16 --trust_remote_code
 ```
 
+finetuning した後の model を利用したい場合は, --model の後に`.bin`(もしくはおそらく`.pt`もいける)ファイルが入っているディレクトリまでのパスを指定すれば良い.
+
 ### 推論
 
 ```python
