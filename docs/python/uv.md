@@ -40,6 +40,11 @@ uv sync
 . .venv/bin/activate
 ```
 
+## 注意点
+
+当たり前だが、`pip`が入っていないので注意する必要がある。
+
 ## 出典
 
 - [公式サイト](https://astral.sh/blog/uv-unified-python-packaging)
+- [めちゃくちゃ良記事](https://zenn.dev/turing_motors/articles/594fbef42a36ee)
